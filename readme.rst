@@ -1,70 +1,24 @@
-###################
-What is CodeIgniter
-###################
+Design a simple ‘FoodShala’ web application:
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Requirements:
+1) Assume you are designing a real-life system, that will be used by real users.
+2) The application should contain 2 types of users: Restaurants and Customers
+3) Pages to be developed-
+‘Registration’ pages - Different registration pages for Restaurants & Customers. Capture customer’s preferences (veg/non-veg) during registration.
+‘Login’ pages - Single/different login pages for restaurants & customers. 
+‘Add menu item’ page - A restaurant, once logged in, should be able to add details of new food items (including whether they are veg or non-veg) to their restaurant’s menu. Access to this page should be restricted only to restaurants. 
+‘Menu’ page - There should be a page that displays all the available food items along with which restaurants have them and a ‘Order’ button. This page should be accessible to everyone, irrespective of whether the user is logged in or not. Expected functionality on click of the 'Order' button-  
+- Only customers should be able to order food by clicking the ‘Order’ button.
+- It’s optional to implement cart functionality.
+- If the user is not logged in, then he/she should be redirected to the login page.
+- If a user is logged in as a restaurant, then the user should not be allowed to order the food.
+‘View orders’ page - Restaurant should be able to see the list of all the customers who have ordered from their restaurant along with the food items they have ordered.
 
-*******************
-Release Information
-*******************
+Technologies: 
+a) Please write the front-end in HTML/CSS/JS. You may use Bootstrap if you wish. 
+b) Please write the backend in either core PHP or PHP Codeigniter framework. Use MySQL as the database.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Mainly, we want you to concentrate on the following things:
+a) Neat & simple design
+b) Good database architecture
+c) Good coding practices (write readable, modular code)
